@@ -57,6 +57,10 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip.to_i
   input_to_index(user_input)
+    converted_input = index
+  number_valid?(index)
+  
+  
 end
 
   
