@@ -15,4 +15,4 @@ if (valid_move?(board, index) == true)  #if index is valid
   display_board(board) #show the board
 else   #else
   #ask for input again until you get a valid input
-#end
+end #end
