@@ -8,12 +8,11 @@ display_board(board)
 
 turn(board) #ask for input
 
-user_input = gets.strip.to_i
-#get input
-#convert input to index
-#if index is valid
-  #make the move for index
-  #show the board
-#else
+user_input = gets.strip.to_i #get input & #convert input to index
+
+if (valid_move?(board, index) == true)  #if index is valid
+  execute move(board, index, character = "X") #make the move for index
+  display_board(board) #show the board
+else   #else
   #ask for input again until you get a valid input
 #end
