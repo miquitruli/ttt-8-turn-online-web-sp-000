@@ -60,7 +60,5 @@ def turn(board)
     converted_input = index
   number_valid?(index)
   
-  
-end
 
-  
+end
