@@ -40,9 +40,9 @@ def valid_move?(board, index)
 end
 
 def input_to_index(user_input)
-  converted_input = user_input.to_i
-  converted_input -= 1
-  return converted_input
+  index = user_input.to_i
+  index -= 1
+  return index
 end
 
 #move This method should accept a board, an index from the user (which was converted from their raw input with input_to_index), and a token to mark that position with (you can give that argument a
@@ -57,5 +57,6 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip.to_i
   input_to_index(user_input)
-  valid_move?(board, index) == true
+  if valid_move?(board, index) == true
+    
 end
