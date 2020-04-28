@@ -14,5 +14,6 @@ if (valid_move?(board, index) == true)  #if index is valid
   execute move(board, index, character = "X") #make the move for index
   display_board(board) #show the board
 else   #else
-  #ask for input again until you get a valid input
+  counter = 0
+  until counter ==  #ask for input again until you get a valid input
 end #end
